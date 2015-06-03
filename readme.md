@@ -16,6 +16,8 @@ Angular directive to triggger `window.onbeforeunload()` based on a specified con
 
 ## Usage
 
+Here is a [demo page](https://cdn.rawgit.com/aderowbotham/ng-warn-on-unload/master/demo/index.html)
+
 HTML:
 
     <div
