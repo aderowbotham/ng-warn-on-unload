@@ -5,7 +5,7 @@ Angular directive to triggger `window.onbeforeunload()` based on a specified con
 
 ## Attributes
 
-* ngWarnOnUnload - Value Required. Defines the scope property to be evaluated in order to determine whether the user should be warned on unload
+* ngWarnOnUnload - Required with value set to a property that can evaluate to a boolean value. Defines the scope property to be evaluated in order to determine whether the user should be warned on unload
 * ngWarnOnUnloadMsg - Optional. Defines the message to be returned from `onbeforeunload`
 
 
