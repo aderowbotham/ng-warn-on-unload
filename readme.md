@@ -1,4 +1,4 @@
-# ngWarnOnUnload
+# ng-warn-on-unload
 
 Angular directive to triggger `window.onbeforeunload()` based on a specified condition passed as the value of an attribute
 

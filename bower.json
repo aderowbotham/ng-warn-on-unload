@@ -4,7 +4,7 @@
   "authors": [
     "Adrian Rowbotham <aderowbotham@gmail.com>"
   ],
-  "description": "Angular directive wrapper for Shadowbox.js",
+  "description": "AAngular directive to triggger window.onbeforeunload()",
   "ignore": ["bower_components"],
   "dependencies": {
     "angular": "#>=1.3"
