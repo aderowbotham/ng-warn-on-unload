@@ -14,7 +14,10 @@ Angular directive to triggger `window.onbeforeunload()` based on a specified con
 
 HTML:
 
-    <div ng-app="app" ng-warn-on-unload="{{ !productForm.$pristine }}" ng-warn-on-unload-msg="You have made unsaved changes to this product.">
+    <div
+      ng-app="app" 
+      ng-warn-on-unload="{{ !productForm.$pristine }}" 
+      ng-warn-on-unload-msg="You have made unsaved changes to this product.">
 
       <h1>ngWarnOnUnload demo</h1>
 
