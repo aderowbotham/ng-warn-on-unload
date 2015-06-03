@@ -2,6 +2,10 @@
 
 Angular directive to triggger `window.onbeforeunload()` based on a specified condition passed as the value of an attribute
 
+## Installation
+
+`bower install ng-warn-on-unload`
+
 
 ## Attributes
 
