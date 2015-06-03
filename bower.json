@@ -1,0 +1,12 @@
+{
+  "name": "ng-warn-on-unload",
+  "version": "1.0.0",
+  "authors": [
+    "Adrian Rowbotham <aderowbotham@gmail.com>"
+  ],
+  "description": "Angular directive wrapper for Shadowbox.js",
+  "ignore": ["bower_components"],
+  "dependencies": {
+    "angular": "#>=1.3"
+  }
+}
