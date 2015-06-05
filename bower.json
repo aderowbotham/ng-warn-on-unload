@@ -1,6 +1,6 @@
 {
   "name": "ng-warn-on-unload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/ng-warn-on-unload.js",
   "authors": [
     "Adrian Rowbotham <aderowbotham@gmail.com>"

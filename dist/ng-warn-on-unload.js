@@ -1,4 +1,4 @@
-angular.module('utils', []).directive('ngWarnOnUnload', function($window) {
+angular.module('utils', []).directive('ngWarnOnUnload', ["$window", function($window) {
 
   return {
     ngWarnOnUnload: '=',
@@ -19,4 +19,4 @@ angular.module('utils', []).directive('ngWarnOnUnload', function($window) {
 
     }
   };
-});
+}]);
