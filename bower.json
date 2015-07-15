@@ -1,11 +1,11 @@
 {
   "name": "ng-warn-on-unload",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/ng-warn-on-unload.js",
   "authors": [
     "Adrian Rowbotham <aderowbotham@gmail.com>"
   ],
-  "description": "AAngular directive to triggger window.onbeforeunload()",
+  "description": "Angular directive to triggger window.onbeforeunload()",
   "ignore": ["bower_components"],
   "dependencies": {
     "angular": "#>=1.3"

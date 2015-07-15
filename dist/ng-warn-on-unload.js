@@ -17,6 +17,10 @@ angular.module('adeweb.utils', []).directive('ngWarnOnUnload', ["$window", funct
         }
       }
 
+      scope.$on("$destroy", function() {
+        $window.onbeforeunload = null;
+      });
+
     }
   };
 }]);
