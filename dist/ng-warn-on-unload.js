@@ -1,4 +1,4 @@
-angular.module('utils', []).directive('ngWarnOnUnload', ["$window", function($window) {
+angular.module('adeweb.utils', []).directive('ngWarnOnUnload', ["$window", function($window) {
 
   return {
     ngWarnOnUnload: '=',
