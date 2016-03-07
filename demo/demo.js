@@ -1,3 +1,7 @@
-'use strict';
+(function(){
 
-angular.module('app', ['adeweb.utils']);
+  'use strict';
+
+  angular.module('app', ['ngWarnOnUnload']);
+
+}());

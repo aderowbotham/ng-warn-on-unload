@@ -1,26 +1,33 @@
-angular.module('adeweb.utils', []).directive('ngWarnOnUnload', ["$window", function($window) {
+(function(){
 
-  return {
-    ngWarnOnUnload: '=',
-    link: function(scope, elem, attrs) {
+  "use strict";
 
-      if(!attrs.ngWarnOnUnload){
-        throw Error("The ngWarnOnUnload attribute requires a value");
-      }
+  angular.module('ngWarnOnUnload', []).directive('ngWarnOnUnload', ["$window", function($window) {
 
-      var warnMessage = attrs.ngWarnOnUnloadMsg ? attrs.ngWarnOnUnloadMsg : "You have unsaved changes.";
+    return {
+      ngWarnOnUnload: '=',
+      link: function(scope, elem, attrs) {
 
-      $window.onbeforeunload = function(){
-        var warn = scope.$eval(attrs.ngWarnOnUnload);
-        if(warn){
-          return warnMessage;
+        if(!attrs.ngWarnOnUnload){
+          throw Error("The ngWarnOnUnload attribute requires a value");
         }
+
+        var warnMessage = attrs.ngWarnOnUnloadMsg ? attrs.ngWarnOnUnloadMsg : "You have unsaved changes.";
+
+        $window.onbeforeunload = function(){
+          var warn = scope.$eval(attrs.ngWarnOnUnload);
+          if(warn){
+            return warnMessage;
+          }
+        };
+
+        scope.$on("$destroy", function() {
+          $window.onbeforeunload = null;
+        });
+
       }
+    };
+  }]);
 
-      scope.$on("$destroy", function() {
-        $window.onbeforeunload = null;
-      });
 
-    }
-  };
-}]);
+}());

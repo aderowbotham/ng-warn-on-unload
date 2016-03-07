@@ -6,6 +6,10 @@ Angular directive to triggger `window.onbeforeunload()` based on a specified con
 
 `bower install ng-warn-on-unload`
 
+## Note
+
+The module name has been changed to `ngWarnOnUnload`. You may need to update the name in your application dependencies as otherwise this is a breaking change.
+
 
 ## Attributes
 
@@ -21,8 +25,8 @@ Here is a [demo page](https://cdn.rawgit.com/aderowbotham/ng-warn-on-unload/mast
 HTML:
 
     <div
-      ng-app="app" 
-      ng-warn-on-unload="{{ !productForm.$pristine }}" 
+      ng-app="app"
+      ng-warn-on-unload="{{ !productForm.$pristine }}"
       ng-warn-on-unload-msg="You have made unsaved changes to this product.">
 
       <h1>ngWarnOnUnload demo</h1>
@@ -33,4 +37,3 @@ HTML:
       </form>
 
     </div>
-
