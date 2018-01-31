@@ -26,8 +26,7 @@ HTML:
 
     <div
       ng-app="app"
-      ng-warn-on-unload="{{ !productForm.$pristine }}"
-      ng-warn-on-unload-msg="You have made unsaved changes to this product.">
+      ng-warn-on-unload="{{ !productForm.$pristine }}">
 
       <h1>ngWarnOnUnload demo</h1>
 
