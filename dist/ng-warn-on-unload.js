@@ -21,6 +21,7 @@
           if(warn){
             return true;
           }
+          return undefined;
         };
 
         scope.$on("$destroy", function() {
